@@ -1,0 +1,376 @@
+/**
+ * All CSS must be contextualised to #fleek-reporting-plugin
+ */
+#fleek-reporting-plugin * {
+  box-sizing: border-box;
+}
+#fleek-reporting-plugin p {
+  margin: 0;
+  padding: 0;
+}
+#fleek-reporting-plugin pre {
+  white-space: pre-wrap;
+}
+#fleek-reporting-plugin label {
+  display: block;
+  font-weight: bold;
+}
+#fleek-reporting-plugin .hide {
+  display: none;
+}
+#fleek-reporting-plugin .flgr-helper-text {
+  color: gray;
+  font-size: 90%;
+  font-style: italic;
+}
+#fleek-reporting-plugin .flgr-plugin-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#fleek-reporting-plugin .flgr-relative {
+  position: relative;
+}
+#fleek-reporting-plugin .flgr-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+#fleek-reporting-plugin .flgr-flex-space-between {
+  justify-content: space-between;
+}
+#fleek-reporting-plugin .flgr-text-center {
+  text-align: center;
+}
+#fleek-reporting-plugin .flgr-w-100 {
+  width: 100%;
+}
+#fleek-reporting-plugin .flgr-bg-white {
+  background-color: white;
+}
+#fleek-reporting-plugin .flgr-bg-red {
+  background-color: #ffb6b6;
+}
+#fleek-reporting-plugin .flgr-bg-light-blue {
+  background-color: #e9f4ff;
+}
+#fleek-reporting-plugin .flgr-link {
+  color: #6c4797;
+  font-weight: bold;
+  text-decoration: none;
+}
+#fleek-reporting-plugin .flgr-hr {
+  border-top: 1px solid #e3e6ef;
+  margin: 0;
+  border-bottom: 0;
+}
+#fleek-reporting-plugin .flgr-box {
+  padding: 1rem;
+}
+#fleek-reporting-plugin .flgr-box-2 .flgr-form-input {
+  flex: 0 0 49%;
+  width: 49%;
+}
+#fleek-reporting-plugin .flgr-box-3 .flgr-form-input {
+  flex: 0 0 32.333333%;
+  width: 32.333333%;
+}
+#fleek-reporting-plugin .flgr-box input,
+#fleek-reporting-plugin .flgr-box select,
+#fleek-reporting-plugin .flgr-box textarea {
+  width: 100%;
+  max-width: unset;
+}
+#fleek-reporting-plugin .flgr-box input[type="checkbox"] {
+  width: 17px;
+}
+#fleek-reporting-plugin .flgr-form-input {
+  margin-bottom: 10px;
+}
+#fleek-reporting-plugin .fglr-actions a {
+  text-decoration: none;
+}
+#fleek-reporting-plugin [data-flgr-repeater] {
+  position: relative;
+}
+#fleek-reporting-plugin [data-flgr-repeater] .flgr-repeater-actions button {
+  display: block;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  color: white;
+  padding-bottom: 2px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+}
+#fleek-reporting-plugin [data-flgr-repeater] .flgr-repeater-actions button span.plus {
+  background: #19a319;
+  border: none;
+  position: absolute;
+  left: -7px;
+  top: -4px;
+  border-radius: 100%;
+  padding: 5px 9px;
+}
+#fleek-reporting-plugin [data-flgr-repeater] .flgr-repeater-actions button span.condition-text {
+  background: #158b15;
+  border: 1px solid #1b851b;
+  padding: 4px 12px 4px 18px;
+  border-radius: 0 18px 18px 0;
+}
+#fleek-reporting-plugin [data-flgr-repeater] .flgr-criteria {
+  background: #f3faff;
+  color: #3c434a;
+  padding: 10px 10px 40px;
+  position: relative;
+}
+#fleek-reporting-plugin [data-flgr-repeater] .flgr-and {
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e3e6ef;
+  background: white;
+  font-size: 18px;
+}
+#fleek-reporting-plugin .flgr-progress-bar-wrapper {
+  background: #f3faff;
+  padding: 10px;
+}
+#fleek-reporting-plugin .flgr-progress-bar-wrapper .flgr-progress-box {
+  background: #3e7da6;
+  width: 5%;
+  transition: .5s all ease-in;
+  padding: 0 1%;
+  color: #FFF;
+  border-radius: 4px;
+}
+#fleek-reporting-plugin .flgr-progress-bar-wrapper .flgr-progress-description {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+#fleek-reporting-plugin .flgr-panel {
+  box-shadow: 0 1px 4px rgb(18 25 97 / 8%);
+  border: 1px solid #e3e6ef;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+#fleek-reporting-plugin .flgr-settings-header {
+  padding: 1rem;
+}
+#fleek-reporting-plugin .flgr-results-header {
+  padding: 1rem;
+  background: #f3faff;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fleek-reporting-plugin .flgr-settings-header h2,
+#fleek-reporting-plugin .flgr-settings-header h3,
+#fleek-reporting-plugin .flgr-results-header h2,
+#fleek-reporting-plugin .flgr-results-header h3 {
+  margin: 0;
+}
+#fleek-reporting-plugin .flgr-question-answer {
+  padding: 10px 10px 20px;
+  border-bottom: 2px dotted #f0f0f1;
+}
+#fleek-reporting-plugin .flgr-question-answer:last-child {
+  border-bottom: none;
+}
+#fleek-reporting-plugin .flgr-answers {
+  margin: 10px 10px 0;
+}
+#fleek-reporting-plugin .flgr-question-answer table.flgr-table {
+  width: 100%;
+}
+#fleek-reporting-plugin .flgr-question-answer table.flgr-table th,
+#fleek-reporting-plugin .flgr-question-answer table.flgr-table td {
+  text-align: left;
+}
+#fleek-reporting-plugin .flgr-question-answer table.flgr-survey-table th,
+#fleek-reporting-plugin .flgr-question-answer table.flgr-survey-table td {
+  text-align: center;
+}
+#fleek-reporting-plugin .flgr-question-answer table.flgr-survey-table .flgr-survey-answer {
+  padding: 5px 10px;
+  background: #3e7da6;
+  border-radius: 100%;
+  display: inline-block;
+  color: white;
+}
+#fleek-reporting-plugin .flgr-question-answer table.flgr-survey-table .flgr-highest-answer{
+  font-weight: bold;
+  background-color: #147c14;
+}
+#fleek-reporting-plugin .flgr-gform-field-identifier {
+  background: #99aab5;
+  color: white;
+  padding: 4px 11px 5px;
+  border-radius: 15px;
+  font-weight: normal;
+}
+#fleek-reporting-plugin .flgr-gform-field-identifier button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #3e7da6;
+}
+#fleek-reporting-plugin .flgr-gform-field-identifier button:hover {
+  animation: flgr_spin 1.5s linear infinite;
+}
+@keyframes flgr_spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+#fleek-reporting-plugin .flgr-multi-choice-answer {
+  background: #99aab5;
+  padding-right: 15px;
+  color: #FFF;
+  border-radius: 3px;
+  padding-bottom: 1px;
+  margin: 10px 0 0px 10px;
+}
+#fleek-reporting-plugin span.flgr-count {
+  background: #3e7da6;
+  padding: 5px 10px 6px;
+  border-radius: 20px;
+  position: relative;
+  left: -4px;
+  color: white;
+  font-weight: bold;
+}
+#fleek-reporting-plugin .flgr-multiple-free-text-answers {
+  width: 100%;
+  background: #99aab5;
+  max-height: 200px;
+  overflow-y: scroll;
+  color: #FFF;
+}
+#fleek-reporting-plugin .flgr-multiple-free-text-answers::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+#fleek-reporting-plugin .flgr-multiple-free-text-answers::-webkit-scrollbar {
+	width: 8px;
+	background-color: #F5F5F5;
+}
+#fleek-reporting-plugin .flgr-multiple-free-text-answers::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #2b2b2b;
+}
+
+#fleek-reporting-plugin .flgr-free-text-answer {
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #f0f0f1;
+  position: relative;
+}
+#fleek-reporting-plugin .flgr-free-text-answer-label {
+  font-weight: bold;
+}
+#fleek-reporting-plugin .flgr-free-text-answer a {
+  color: #FFF;
+}
+#fleek-reporting-plugin .flgr-free-text-answer a.flgr-link-to-entry {
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  outline: none;
+}
+#fleek-reporting-plugin .flgr-free-text-answer table {
+  width: 100%;
+}
+#fleek-reporting-plugin .flgr-free-text-answer th,
+#fleek-reporting-plugin .flgr-free-text-answer td {
+  padding: 5px;
+}
+#fleek-reporting-plugin .flgr-multi-choice-other {
+  margin-top: 10px;
+}
+#fleek-reporting-plugin .flgr-settings-footer {
+  padding: 1rem;
+}
+#fleek-reporting-plugin .flgr-settings-footer input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #3e7da6;
+  color: #FFF;
+  border: 2px outset #3e7da6;
+  cursor: pointer;
+  transition: .4s all;
+}
+#fleek-reporting-plugin .flgr-settings-footer input[type="submit"]:hover {
+  background-color: #376b8f;
+}
+#fleek-reporting-plugin .flgr-settings-footer input[type="submit"]:active {
+  border: 2px inset #376b8f;
+}
+#fleek-reporting-plugin .modal {
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  transition: all 300ms ease-out; /* Fade speed */
+}
+#fleek-reporting-plugin .modal.flgr-open-modal {
+  opacity: 1;
+  z-index: 9999;
+}
+#fleek-reporting-plugin .modal-content {
+  background-color: #fefefe;
+  position: relative;
+  margin: 70px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Modal size */
+  transition: all 300ms ease-out; /* Up/down speed */
+  overflow-y: auto;
+}
+#fleek-reporting-plugin .modal.open-modal .modal-content {
+  margin: 5% auto;
+}
+#fleek-reporting-plugin .close-modal-btn {
+  color: #4a4a4a;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#fleek-reporting-plugin .close:hover,
+#fleek-reporting-plugin .close:focus {
+  color: black;
+  text-decoration: none;
+}
+#fleek-reporting-plugin #contact-us-modal .flgr-form-input {
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 0px 3px #aaa;
+}
+#fleek-reporting-plugin #contact-us-modal .flgr-form-input input[type="submit"] {
+  background: #7ccf7c;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#fleek-reporting-plugin #contact-us-modal .flgr-form-input input[type="submit"]:hover,
+#fleek-reporting-plugin #contact-us-modal .flgr-form-input input[type="submit"]:active {
+  filter: contrast(1.1);
+}
